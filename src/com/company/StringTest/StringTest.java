@@ -28,17 +28,18 @@ public class StringTest {
         long start = System.currentTimeMillis();
 
         StringBuffer str = new StringBuffer();
-        int i =0;
-        while (i<10000000){
+        int i = 100000;
+//        int i =1000000;
+//        int i =10000000;
+        while (i > 0) {
             str = str.append("world");
-            System.out.print(Runtime.getRuntime().totalMemory()+"\n\n\n");
+            System.out.print(Runtime.getRuntime().totalMemory() + "\n\n\n");
             i++;
         }
 
 
 //        StringBuilder str = new StringBuilder();
-//        int i =0;
-//        while (i<10000000){
+//        while (i>0){
 //            str = str.append("world");
 //            System.out.print(Runtime.getRuntime().totalMemory()+"\n\n\n");
 //            i++;
@@ -46,8 +47,7 @@ public class StringTest {
 
 
 //        String str = "";
-//        int i = 0;
-//        while (i < 100000) {
+//        while (i>0){
 //            str = str + "world";
 //            System.out.print(Runtime.getRuntime().totalMemory() + "\n\n\n");
 //            i++;
