@@ -1,4 +1,4 @@
-package com.company;
+package com.company.StringTest;
 
 //100,000
 //StringBuffer -> 272629760,
